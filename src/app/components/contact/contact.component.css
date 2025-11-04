@@ -1,0 +1,20 @@
+.main-color {
+  background-color: #2C3E50;
+}
+.my-col {
+  color: #2C3E50;
+}
+.lined {
+  height: .25rem;
+  width: 5.625rem;
+}
+.btn-col {
+  background-color: #1ABC9C;
+}
+.w-60 {
+  width: 60%;
+}
+.form-control:focus {
+  border-color: transparent;
+  box-shadow: none;
+}

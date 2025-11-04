@@ -1,0 +1,9 @@
+.bg-col {
+  background-color: #2C3E50;
+}
+.icon-ex {
+  border: .0625rem solid white;
+  width: 2.1875rem;
+  height: 2.1875rem;
+  border-radius: 50%;
+}

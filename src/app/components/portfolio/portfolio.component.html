@@ -1,0 +1,72 @@
+
+<section class="pt-4">
+  <div class="container py-5 my-5 position-relative">
+    <div class="pt-2 pb-3">
+      <h2 class="text-center text-uppercase fs-1 fw-bold main-color">Portfolio Component</h2>
+      <div class="d-flex justify-content-center align-items-center mt-3">
+        <div class="lined bg-col pe-4"></div>
+        <i class="fa-solid fa-star main-color px-3"></i>
+        <div class="lined bg-col ps-4"></div>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div (click)="currentIndex = 0" class="inner mx-2 position-relative rounded">
+          <img class="w-100 rounded" src="/images/poert1.png" alt="">
+          <div class="layer rounded d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-plus my-fs text-white"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div (click)="currentIndex = 1" class="inner mx-2 position-relative rounded">
+          <img class="w-100 rounded" src="/images/port2.png" alt="">
+          <div class="layer rounded d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-plus my-fs text-white"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div (click)="currentIndex = 2" class="inner mx-2 position-relative rounded">
+          <img class="w-100 rounded" src="/images/port3.png" alt="">
+          <div class="layer rounded d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-plus my-fs text-white"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row g-4 mt-4">
+      <div class="col-md-4">
+        <div (click)="currentIndex = 0" class="inner mx-2 position-relative rounded">
+          <img class="w-100 rounded" src="/images/poert1.png" alt="">
+          <div class="layer rounded d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-plus my-fs text-white"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div (click)="currentIndex = 1" class="inner mx-2 position-relative rounded">
+          <img class="w-100 rounded" src="/images/port2.png" alt="">
+          <div class="layer rounded d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-plus my-fs text-white"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div (click)="currentIndex = 2" class="inner mx-2 position-relative rounded">
+          <img class="w-100 rounded" src="/images/port3.png" alt="">
+          <div class="layer rounded d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-plus my-fs text-white"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div class="position-absolute top-0 light-container w-100 d-flex justify-content-center align-items-center" (click)="currentIndex = null" style="margin-top: 20px;">
+      <img class="w-40 pt-5 mt-5"
+      [src]="currentIndex !== null ? imagesArr[currentIndex] : ''"
+      alt="Selected Image"
+      [style.display]="currentIndex !== null ? 'block' : 'none'">
+    </div>
+  </div>
+</section>
+

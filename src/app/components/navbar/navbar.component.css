@@ -1,0 +1,9 @@
+.bg-main {
+  background-color: #2C3E50;
+}
+.bg-col {
+  background-color: #1ABC9C;
+}
+.navbar {
+  transition: 1s;
+}
